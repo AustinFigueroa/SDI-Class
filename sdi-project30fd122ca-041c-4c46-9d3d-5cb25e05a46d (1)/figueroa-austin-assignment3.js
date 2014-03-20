@@ -47,7 +47,67 @@ for (var i = 0; i < friendsOnline.length; i++) {
 
 };
 
+// Json data
 
+var jsonData = {
+    
+    "gamer buddies": [
+        
+        {
+           "firstName": "Gia",
+           "role": "attack damage carry",
+           "fightingRank": "B Class"
+        },
+        {
+            "firstName": "Casey",
+            "role": "Jungler",
+            "fightingRank": "A Class"
+        },
+        {
+            "firstName": "Drezdan",
+            "role": "Support",
+            "fightingRank": "C Class"
+        },
+        {
+            "firstName": "Nicholas",
+            "role": "Tank",
+            "fightingRank": "A Class"
+        },
+        {
+            "firstName": "Tyler",
+            "role": "Mage",
+            "fightingRank": "S Class"
+        
+        },
+        {
+           "firstName": "Eric",
+           "role": "Tank",
+           "fightingRank": "D Class"
+        },
+        {
+            "firstName": "Melissa",
+            "role": "Mage",
+            "fightingRank": "S Class"
+        },
+        {
+            "firstName": "Alan",
+            "role": "Jungler",
+            "fightingRank": "A Class"
+        }
+    
+    ]
+    
+};
+    
+    for (var key in jsonData.gamerBuddies) {
+        
+        for (newKey in jsonData.gamerBuddies[key]) {
+          
+          if(newKey === "firstname") {
+            console.log(newKey+" : " + jsonData.students[key][neyKey]);
+        };
+        
+        };
 
 // while loop/return
 var returnTalk;
@@ -130,6 +190,10 @@ var playingLoop = function(play){
 
 
 returnPlay = playingLoop (1);
+
+
+
+
 
 console.log("You have played with all " + returnPlay + " friends and now you are satisfied.");
 
