@@ -36,7 +36,7 @@ if (myConfirmation ==! true) {
 } else {
     console.log("Nice Job! You were right!");
 };
-console.log(" Now it's time to talk to some of those friends to see if they want to play!");
+
 
 //array property
 var friendsOnline = ["Gia", "Casey", "Nicholas", "Tyler", "Drezdan", "Alan", "Melissa", "Eric"];
@@ -94,10 +94,10 @@ var jsonData = {
             "role": "Jungler",
             "fightingRank": "A Class"
         }
-    
     ]
-    
+
 };
+
     
     for (var key in jsonData.gamerBuddies) {
         
@@ -108,7 +108,7 @@ var jsonData = {
         };
         
         };
-
+    };
 // while loop/return
 var returnTalk;
 
@@ -192,10 +192,9 @@ var playingLoop = function(play){
 returnPlay = playingLoop (1);
 
 
-
-
-
 console.log("You have played with all " + returnPlay + " friends and now you are satisfied.");
+
+
 
 //global variables
 var string1 = "show" ;
