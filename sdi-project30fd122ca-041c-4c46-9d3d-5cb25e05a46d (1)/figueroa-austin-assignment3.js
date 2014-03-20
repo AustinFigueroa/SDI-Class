@@ -78,6 +78,39 @@ numOfFriends = numOfFriends - 3;
 
 console.log( +numOfFriends+" of them want to play with you right now.");
 
+// array 
+var friendsOnline = ["Gia", "Casey", "Nicholas", "Tyler", "Drezdan"];
+for (var i = 0; i < friendsOnline.length; i++) {
+    
+    if (friendsOnline[i] =="Gia", "Casey", "Nicholas", "Tyler", "Drezdan" )
+    {
+        
+        console.log(friendsOnline[i] + " does want to play with you.")
+    
+    } else {
+       
+        console.log(friendsOnline[i] + " does not want to play with you.")
+        
+    };
+
+};
+
+var friendsOnline = ["Alan", "Melissa", "Eric"];
+for (var i = 0; i < friendsOnline.length; i++) {
+    
+    if (friendsOnline[i] =="Alan", "Melissa", "Eric")
+    {
+        
+        console.log(friendsOnline[i] + " does not want to play with you.")
+    
+    } else {
+       
+        console.log(friendsOnline[i] + " does want to play with you.")
+        
+    };
+
+};
+
 //for loop
 var returnPlay;
 
