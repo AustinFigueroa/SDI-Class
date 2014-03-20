@@ -134,28 +134,26 @@ returnPlay = playingLoop (1);
 console.log("You have played with all " + returnPlay + " friends and now you are satisfied.");
 
 //global variables
-var returnWhatToDo;
-
 var string1 = "show" ;
 var string2 = "snack";
 var decision = true;
 
 //return String
 var whatToDo = function(toDo){
-    var a =" The Simpsons,",
-        b = " Family Guy,",
-        c = "then Naruto";
-    var thing1 = "chicken nuggets,",
-        thing2 = "burritoes,",
-        thing3 = "Sandwhich";
-    if (decision === true) {
+        var a =" The Simpsons,";
+        var b = " Family Guy,";
+        var c = "then Naruto";
+        var thing1 = "chicken nuggets,";
+        var thing2 = "burritoes,";
+        var thing3 = "Sandwhich";
+    if (3>2===true) {
 
-	console.log("I should watch a " + string1 +".");
+	console.log("I should watch a" + string1 +".");
     
-        console.log("I will watch" + a + b + c + " in that order.");
+        console.log("So I'm going to watch" + a + b + c + " in that order.");
     } else { 
 
-	console.log("I should grab a " + string2 + ".");
+	console.log("I should grab a" + string2 + ".");
 	console.log("I will eat" + thing1 + thing2 + thing3 + " in that order.");
 };
 };
