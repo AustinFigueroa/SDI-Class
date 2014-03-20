@@ -22,7 +22,7 @@ question1=prompt("How many friends do you think are online?");
     console.log("You have " + outcome + " friends online.");
  };
  
-  //math
+//math
  friendsListNumber(2,3);
  
  friendsListNumber(2,6);
@@ -195,7 +195,6 @@ returnPlay = playingLoop (1);
 console.log("You have played with all " + returnPlay + " friends and now you are satisfied.");
 
 
-
 //global variables
 var string1 = "show" ;
 var string2 = "snack";
@@ -226,3 +225,10 @@ returnWhatToDo = whatToDo()
 
 //output
 console.log(Final+ " talked to " + returnTalk + " friends, played with only " + returnPlay+ " them and finished the day off with a few " + string1 + "s.");
+
+var myStoryEnding = ["The","End"];
+var endLength = myStoryEnding.length;
+for (var i = 0; i < endLength; i++) {
+    alert(myStoryEnding[i]);
+    
+};
