@@ -29,7 +29,7 @@ question1=prompt("How many friends do you think are online?");
 
 console.log("You guessed that the number of friends online were " + question1);
 
-//confirmation/conditional
+//conditional
 myConfirmation = confirm("Did you guess correctly on the number of friends?")
 if (myConfirmation ==! true) {
     console.log("Sadly but you were wrong.")
@@ -109,7 +109,7 @@ var jsonData = {
         
         };
     };
-// while loop/return
+// while loop
 var returnTalk;
 
 var talkingLoop = function(listNumber){
@@ -226,6 +226,7 @@ returnWhatToDo = whatToDo()
 //output
 console.log(Final+ " talked to " + returnTalk + " friends, played with only " + returnPlay+ " them and finished the day off with a few " + string1 + "s.");
 
+//return array
 var myStoryEnding = ["The","End"];
 var endLength = myStoryEnding.length;
 for (var i = 0; i < endLength; i++) {
