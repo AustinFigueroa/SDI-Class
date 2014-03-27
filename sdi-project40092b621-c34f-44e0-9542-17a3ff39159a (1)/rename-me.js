@@ -83,16 +83,49 @@ var myUrl = function (toUrl) {
 	URL = url.substring(0, beforeWebsite + 1);
 
 	if (URL === Url[0]) {
-		return (url + " is a usable url.");
+		return (url + " this is a usable url.");
 	}
 	else if (URL === Url[1]) {
-		return (url + " is a usable url.");
+		return (url + " this is a usable url.");
 	}
 	else {
-		return (url + " is not a usable url.");
+		return (url + " this is not a usable url.");
 	}
 }
 console.log(myUrl("http://www.yahoo.com"));
 console.log(myUrl("https://www.yahoo.com"));
 console.log(myUrl("yahoo.com"));
 
+// Question 6
+// Does a string follow an aaa@bbb.ccc pattern like an email address?
+
+var myEmail = function (Email) {
+	var email = Email,
+		atSymbol = 0,
+		period = 0;
+
+	atSymbol = email.indexOf("@");
+	period = email.indexOf(".");
+
+	if (atSymbol != -1 && period != -1) {
+		if (atSymbol < period) {
+			if (period - atSymbol != 1) {
+				return (email + " this is a usable email.");
+			}
+			else {
+				return (email + " this is not a usable email.");
+			}
+		}
+		else {
+			return (email + " this is not a usable email.");
+		}
+	}
+	else {
+		return (email + " this is not a usable email.");
+	}	
+};
+
+console.log(myEmail("austinfigueroa@yahoo.com"));
+console.log(myEmail("austinfigueroayahoocom"));
+console.log(myEmail("austinfigueroa@yahoo,com"));
+console.log(myEmail("austinfigueroayahoo.com"));
