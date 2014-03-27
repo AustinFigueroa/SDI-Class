@@ -52,3 +52,20 @@ var date1 = new Date(2014,3,20);
 var date2 = new Date(2014,4,3);
 var timeConverter = theDate(date1,date2);
 console.log("The difference between the two dates is " + timeConverter[0] + " days.");
+
+// Question 4
+// Title-case a string (split into words, then uppercase the first letter of each word)
+
+var upperCase = function (Case) {
+		var upper = Case.split(" ");
+		var result = "";
+		for (var i = 0, j = upper.length; i < j; i++) {
+			var upperUpperCase = upper[i].replace(upper[i].charAt(0),(upper[i].charAt(0)).toUpperCase());
+			result = result.concat(upperUpperCase + " ");
+		};
+		return result;
+	};
+        console.log(upperCase("austin figueroa's riddle me fun"));
+
+// Question 5
+// 
