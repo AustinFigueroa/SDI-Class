@@ -65,7 +65,34 @@ var upperCase = function (Case) {
 		};
 		return result;
 	};
-        console.log(upperCase("austin figueroa's riddle me fun"));
+        
+    console.log(upperCase("austin figueroa's riddle me fun"));
 
 // Question 5
-// 
+// Is the string a URL? (Does it start with http: or https:?)
+
+var myUrl = function (toUrl) {
+	var url = toUrl,
+		URL = "",
+		Url = [],
+		beforeWebsite = url.indexOf(":");
+
+	Url[0] = "http:";
+	Url[1] = "https:";
+
+	URL = url.substring(0, beforeWebsite + 1);
+
+	if (URL === Url[0]) {
+		return (url + " is a usable url.");
+	}
+	else if (URL === Url[1]) {
+		return (url + " is a usable url.");
+	}
+	else {
+		return (url + " is not a usable url.");
+	}
+}
+console.log(myUrl("http://www.yahoo.com"));
+console.log(myUrl("https://www.yahoo.com"));
+console.log(myUrl("yahoo.com"));
+
